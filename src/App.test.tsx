@@ -22,6 +22,7 @@ describe('App component', () => {
         expect(checkInput).toHaveProperty('type', 'text');
         expect(checkInput).toHaveProperty('placeholder', 'enter username');
         expect(checkInput).toHaveProperty('name', 'txtUserName');
+        expect(checkInput).toHaveProperty('value', 'Saikat');
         // expect(checkInput).toHaveAttribute('placeholder', 'enter username');
     });
 })

@@ -32,7 +32,7 @@ function App() {
       <div>
         <p>First react test Case</p>
         <p>Saikat Bhadury</p>
-        <input type="text" name="txtUserName" id="" placeholder='enter username' />
+        <input type="text" name="txtUserName" id="" placeholder='enter username' readOnly value={"Saikat"} />
         <a href="https://react.dev" target="_blank" rel="noopener">
           <img src={reactLogo} className="logo react" alt="React logo" title="logo React" />
         </a>
