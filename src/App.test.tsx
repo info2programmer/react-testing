@@ -14,6 +14,18 @@ describe('App component', () => {
     });
 })
 
+describe('App component', () => {
+    test('testing input box', () => {
+        render(<App />);
+        const checkInput = screen.getByRole('textbox');
+        expect(checkInput).toBeDefined();
+        expect(checkInput).toHaveProperty('type', 'text');
+        expect(checkInput).toHaveProperty('placeholder', 'enter username');
+        expect(checkInput).toHaveProperty('name', 'txtUserName');
+        // expect(checkInput).toHaveAttribute('placeholder', 'enter username');
+    });
+})
+
 // describe('App component', () => {
 //     test('renders Vite + React heading', () => {
 //         // Render the App component
