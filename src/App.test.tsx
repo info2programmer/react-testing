@@ -1,11 +1,14 @@
 import { test, expect } from "vitest";
 import { fireEvent, render, screen } from '@testing-library/react';
 import App from "./App";
+import '@testing-library/jest-dom';
 
 
-test("on change event testing", () => {
+test("on click event testing", () => {
     render(<App />);
-    const input = screen.getByRole("textbox") as HTMLInputElement;
-    fireEvent.change(input, { target: { value: "a" } });
-    expect(input.value).toBe("atest");
+    const button = screen.getByRole("button") as HTMLButtonElement;
+    fireEvent.click(button);
+    expect(screen.getByText("Hello")).toBeInTheDocument();
+    // expect(button).toBeInTheDocument();
+    // expect(button).toHaveTextContent("Click Me");
 });
