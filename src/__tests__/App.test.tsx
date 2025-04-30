@@ -1,6 +1,6 @@
 import { test, expect } from "vitest";
 import { fireEvent, render, screen } from '@testing-library/react';
-import App from "./App";
+import App from "../App";
 import '@testing-library/jest-dom';
 
 
