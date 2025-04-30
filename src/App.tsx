@@ -10,8 +10,8 @@ function App() {
   return (
 
     <>
-      <h1>Test Click Event With Button</h1>
-      <button onClick={() => setdata("Hello")}>Click Me</button>
+      <h1>Jest Testing </h1>
+      <button onClick={() => setdata("Hello")}>Update</button>
       <p>{data}</p>
     </>
   )

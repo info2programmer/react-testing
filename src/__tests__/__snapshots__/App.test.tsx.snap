@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`snapshot for app component 1`] = `
+<div>
+  <h1>
+    Jest Testing 
+  </h1>
+  <button>
+    Update
+  </button>
+  <p />
+</div>
+`;
